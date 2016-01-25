@@ -15,6 +15,9 @@
 		0B045A601C4B43BD00CC8F31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B045A5E1C4B43BD00CC8F31 /* LaunchScreen.storyboard */; };
 		0B045A6B1C4B43BD00CC8F31 /* DSPickerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B045A6A1C4B43BD00CC8F31 /* DSPickerViewTests.m */; };
 		0B045A761C4B43BD00CC8F31 /* DSPickerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B045A751C4B43BD00CC8F31 /* DSPickerViewUITests.m */; };
+		0B045A881C4B44D400CC8F31 /* DSPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B045A851C4B44D400CC8F31 /* DSPickerView.m */; };
+		0B045A891C4B44D400CC8F31 /* UIView+DSCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B045A871C4B44D400CC8F31 /* UIView+DSCommon.m */; };
+		0B045A8B1C4BCA1800CC8F31 /* ChinaArea.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B045A8A1C4BCA1800CC8F31 /* ChinaArea.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		0B045A711C4B43BD00CC8F31 /* DSPickerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSPickerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B045A751C4B43BD00CC8F31 /* DSPickerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSPickerViewUITests.m; sourceTree = "<group>"; };
 		0B045A771C4B43BD00CC8F31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B045A841C4B44D400CC8F31 /* DSPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSPickerView.h; sourceTree = "<group>"; };
+		0B045A851C4B44D400CC8F31 /* DSPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSPickerView.m; sourceTree = "<group>"; };
+		0B045A861C4B44D400CC8F31 /* UIView+DSCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DSCommon.h"; sourceTree = "<group>"; };
+		0B045A871C4B44D400CC8F31 /* UIView+DSCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DSCommon.m"; sourceTree = "<group>"; };
+		0B045A8A1C4BCA1800CC8F31 /* ChinaArea.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ChinaArea.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		0B045A4F1C4B43BD00CC8F31 /* DSPickerView */ = {
 			isa = PBXGroup;
 			children = (
+				0B045A831C4B44D400CC8F31 /* DSPickerView */,
 				0B045A531C4B43BD00CC8F31 /* AppDelegate.h */,
 				0B045A541C4B43BD00CC8F31 /* AppDelegate.m */,
 				0B045A561C4B43BD00CC8F31 /* ViewController.h */,
@@ -138,6 +147,18 @@
 				0B045A771C4B43BD00CC8F31 /* Info.plist */,
 			);
 			path = DSPickerViewUITests;
+			sourceTree = "<group>";
+		};
+		0B045A831C4B44D400CC8F31 /* DSPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				0B045A841C4B44D400CC8F31 /* DSPickerView.h */,
+				0B045A851C4B44D400CC8F31 /* DSPickerView.m */,
+				0B045A861C4B44D400CC8F31 /* UIView+DSCommon.h */,
+				0B045A871C4B44D400CC8F31 /* UIView+DSCommon.m */,
+				0B045A8A1C4BCA1800CC8F31 /* ChinaArea.plist */,
+			);
+			path = DSPickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B045A601C4B43BD00CC8F31 /* LaunchScreen.storyboard in Resources */,
+				0B045A8B1C4BCA1800CC8F31 /* ChinaArea.plist in Resources */,
 				0B045A5D1C4B43BD00CC8F31 /* Assets.xcassets in Resources */,
 				0B045A5B1C4B43BD00CC8F31 /* Main.storyboard in Resources */,
 			);
@@ -270,6 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B045A891C4B44D400CC8F31 /* UIView+DSCommon.m in Sources */,
+				0B045A881C4B44D400CC8F31 /* DSPickerView.m in Sources */,
 				0B045A581C4B43BD00CC8F31 /* ViewController.m in Sources */,
 				0B045A551C4B43BD00CC8F31 /* AppDelegate.m in Sources */,
 				0B045A521C4B43BD00CC8F31 /* main.m in Sources */,
@@ -414,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DSPickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-dushu.ou.DSPickerView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DSPickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-dushu.ou.DSPickerView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
